@@ -28,9 +28,7 @@ window.onload = function(e){
 
 const headers = new Headers({
     "Access-Control-Allow-Origin": "https://jeonhl7579.github.io/filter_view/",
-    "xhrFields": {
-        withCredentials: true
-      }
+    "Access-Control-Request-Method":"GET"
   });
 
 submitButton.addEventListener("click",function(e){
