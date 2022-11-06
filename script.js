@@ -26,10 +26,6 @@ window.onload = function(e){
     }
 }
 
-const headers = new Headers({
-    "Access-Control-Allow-Origin": "https://jeonhl7579.github.io/filter_view/",
-    "Access-Control-Request-Method":"GET"
-  });
 
 submitButton.addEventListener("click",function(e){
     e.preventDefault();
@@ -41,13 +37,13 @@ submitButton.addEventListener("click",function(e){
         const resultScore=document.querySelector(`${scoreList[i]}`);
         //console.log(typeof inputText);
         const realurl=`${url}${inputText}`;
-        const result=fetch(realurl,{ headers })
+        const result=fetch(realurl,{ 
+            method: 'GET',  
+            withCredentials: true,  
+            crossorigin: true, })
             .then(res=>{return res.json()})
             .then(data=>{
                 //resultArea.innerHTML=data;
-                if(data === null){
-                    
-                }
                 if(data !== null){
                     console.log(inputText);
                     document.querySelector(`.${positiveList[i]}`).style.width=`${data["score"]*1.3}px`;
