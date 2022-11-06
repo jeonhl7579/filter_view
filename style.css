@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'MonoplexKR-Italic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: 'MonoplexKR-Italic';
+    margin:0 auto;
+    padding:0;
+}
+.container{
+    width:100%;
+    height:100vh;
+    animation: BackgroundGradiant 15s ease infinite;
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:400% 400%;
+}
+
+.table_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 900px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+    font-size:20px;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	background-color: #55608f;
+}
+
+tbody > tr:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+tbody > td{
+    position:relatvie;
+}
+
+.button_container{
+    position: absolute;
+    width:400px;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display:flex;
+    justify-content: center;
+}
+
+.submit_button{
+    width:120px;
+    height:6vh;
+    border-radius:5px;
+    border:0px;
+    background-color:#55608f;
+    color:#fff;
+    font-size:1.2rem;
+    transition:0.5s;
+}
+.submit_button:hover{
+    transform:scale(1.1);
+    background-color:#fff;
+    color:#55608f;
+}
+.reset_button{
+    width:120px;
+    height:6vh;
+    border-radius:5px;
+    border:0px;
+    background-color:#55608f;
+    color:#fff;
+    font-size:1.2rem;
+    transition:0.5s;
+}
+.reset_button:hover{
+    transform:scale(1.1);
+    background-color:#fff;
+    color:#55608f;
+}
+
+.text_area{
+    width:650px;
+}
+
+.result_container {
+    width:250px;
+    height:78px;
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+    justify-content: flex-start;
+}
+.first_result_text{
+    width:100%;
+    height:50%;
+
+}
+.first_result_score{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items: center;
+}
+
+.second_result_text{
+    width:100%;
+    height:50%;
+
+}
+.second_result_score{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items: center;
+}
+
+.third_result_text{
+    width:100%;
+    height:50%;
+    
+}
+
+
+.first_score{
+    width:150px;
+    height:10px;
+    line-height:78px;
+    background-color: gray;
+    border-radius:5px;
+}
+.second_score{
+    width:150px;
+    height:10px;
+    line-height:78px;
+    background-color: gray;
+    border-radius:5px;
+}
+
+
+.positive_container{
+    width:100%;
+    display:flex;
+    padding-top:5px;
+}
+
+.positive_container > p{
+    font-size: 15px;
+    height:16px;
+    width:20%;
+}
+.positive_per{
+    width:60%;
+    height:10px;
+    margin-top:4px;
+    border-radius: 5px;
+}
+.positive_see{
+    width:20%;
+}
+.first_positive_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+.second_positive_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+.third_positive_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+.negative_container{
+    width:100%;
+    display:flex;
+    margin-top:5px;
+}
+.negative_container > p{
+    font-size: 15px;
+    width:20%;
+    height:16px;
+}
+.negative_per{
+    width:60%;
+    height:10px;
+    margin-top:4px;
+    border-radius: 5px;
+}
+.negative_see{
+    width:20%;
+}
+.first_negative_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+.second_negative_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+.third_negative_hr{
+    width:10px;
+    height:100%;
+    float:left;
+    border-radius: 7px;
+    background-color:gray;
+    transition:width linear 1s;
+    border:0px;
+}
+@keyframes BackgroundGradiant {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:50% 100%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
