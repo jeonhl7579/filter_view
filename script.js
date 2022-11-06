@@ -26,6 +26,10 @@ window.onload = function(e){
     }
 }
 
+const headers = new Headers({
+    "Access-Control-Allow-Origin": "*"
+  });
+
 submitButton.addEventListener("click",function(e){
     e.preventDefault();
     for(let i=0; i<3; i++){
@@ -36,7 +40,7 @@ submitButton.addEventListener("click",function(e){
         const resultScore=document.querySelector(`${scoreList[i]}`);
         //console.log(typeof inputText);
         const realurl=`${url}${inputText}`;
-        const result=fetch(realurl,{mode:'cors',credentials:'include'})
+        const result=fetch(realurl,{ headers })
             .then(res=>{return res.json()})
             .then(data=>{
                 //resultArea.innerHTML=data;
