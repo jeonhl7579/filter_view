@@ -27,7 +27,7 @@ window.onload = function(e){
 }
 
 const headers = new Headers({
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": "https://jeonhl7579.github.io/filter_view/",
     "xhrFields": {
         withCredentials: true
       }
