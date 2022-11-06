@@ -36,7 +36,7 @@ submitButton.addEventListener("click",function(e){
         const resultScore=document.querySelector(`${scoreList[i]}`);
         //console.log(typeof inputText);
         const realurl=`${url}${inputText}`;
-        const result=fetch(realurl)
+        const result=fetch(realurl,{mode:'cors',credentials:'include'})
             .then(res=>{return res.json()})
             .then(data=>{
                 //resultArea.innerHTML=data;
