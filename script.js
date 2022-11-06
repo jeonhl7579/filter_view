@@ -9,7 +9,7 @@ const positiveList=['first_positive_hr','second_positive_hr','third_positive_hr'
 const negativeList=['first_negative_hr','second_negative_hr','third_negative_hr'];
 const positiveSeeList=['first_positive_see','second_positive_see','third_positive_see'];
 const negativeSeeList=['first_negative_see','second_negative_see','third_negative_see'];
-const url='http://localhost:8080/test/';
+const url='https://5ff1-59-27-137-107.jp.ngrok.io/test/';
 
 window.onload = function(e){
     e.preventDefault();
