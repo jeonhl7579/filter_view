@@ -27,7 +27,10 @@ window.onload = function(e){
 }
 
 const headers = new Headers({
-    "Access-Control-Allow-Origin": "*"
+    "Access-Control-Allow-Origin": "*",
+    "xhrFields": {
+        withCredentials: true
+      }
   });
 
 submitButton.addEventListener("click",function(e){
